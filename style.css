@@ -84,11 +84,38 @@ main p{
 
 main img{
   width: 100%;
+  min-width: 40rem;
 }
 
-aside{
+main h2{
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+aside figure{
+  display: flex;
   
-}  
+  gap: 1.6rem;
+  margin-right: 11rem;
+  margin-bottom: 3.2rem;
+}
+
+aside img{
+  width: auto;
+  height: auto;
+}
+
+aside h2{
+  margin-top: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+
+aside h4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
 
 footer{
   background-color: var(--color-base-green);
@@ -101,4 +128,30 @@ footer p {
   text-align: center;
   font-size: 1.6rem;
   padding: 1rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #app{
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem, 2rem, 3.9rem 2rem;
+  }
+
+  .artigos{
+    align-content: center;
+  }
+  
+  .container{
+    background-color: red;
+    padding: 2rem;
+    display: flex;
+    align-content: center;
+  }
 }
