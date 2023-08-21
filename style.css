@@ -80,6 +80,7 @@ main{
 main p{
   line-height: 2.6rem;
   color: var(--color-base-black);
+  text-align: justify;
 }
 
 main img{
@@ -94,7 +95,7 @@ main h2{
 
 aside figure{
   display: flex;
-  
+  justify-items: center;
   gap: 1.6rem;
   margin-right: 11rem;
   margin-bottom: 3.2rem;
@@ -115,7 +116,9 @@ aside h4{
   margin-bottom: 1rem;
 }
 
-
+aside p{
+  text-align: justify;
+}
 
 footer{
   background-color: var(--color-base-green);
@@ -131,10 +134,14 @@ footer p {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
   #app{
     display: flex;
     flex-direction: column;
+  }
+
+  main{
+    margin: 1rem;
   }
 
   aside{
@@ -149,9 +156,14 @@ footer p {
   }
   
   .container{
-    background-color: red;
     padding: 2rem;
     display: flex;
     align-content: center;
   }
+
+  aside figure{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
 }
